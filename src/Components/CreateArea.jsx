@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import AddIcon from '@mui/icons-material/Add';
 
 function CreateArea(props) {
 
@@ -40,7 +41,7 @@ function CreateArea(props) {
       <form className="create-note">
         <input onChange={handleChange}  name="title" placeholder="Title" value={text.title}/>
         <textarea onChange={handleChange} name="content" placeholder="Take a note..." rows="3" value={text.content}/>
-        <button onClick={addToNotes}>Add</button>
+        <button onClick={addToNotes}><AddIcon /></button>
       </form>
     </div>
   );
